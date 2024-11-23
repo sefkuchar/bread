@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Bread Maker - Solana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="bread2.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="bordered-header">
+            <h1>Bread Maker on Solana 🌟</h1>
+            <p>Drag the ingredients to the bowl emoji to bake a loaf of bread!</p>
+        </header>
+
+        <div class="workspace">
+            <div id="flour" class="ingredient" draggable="true">🌾 Flour</div>
+            <div id="water" class="ingredient" draggable="true">💧 Water</div>
+            <div id="salt" class="ingredient" draggable="true">🧂 Salt</div>
+            <div id="bowl" class="emoji-drop">
+                🥣
+                <p>Drop Ingredients Here</p>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <footer>
+            <p>
+                Solana Contract Address: 
+                <a href="https://photon-base.tinyastro.io/en/lp/0xeeec81e40a92bab1485f28d730bc450b43efb5c4?handle=42817dbc761bb2e84610" 
+                   target="_blank" 
+                   id="contract-address">
+                    45ada5...5a7pump
+                </a>
+            </p>
+        </footer>
+        
+    </div>
+
+    <!-- Pop-up sign -->
+    <div id="popup" class="popup">
+        <h1>Work for your bread! 💪</h1>
+        <img src="bread2.webp">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
